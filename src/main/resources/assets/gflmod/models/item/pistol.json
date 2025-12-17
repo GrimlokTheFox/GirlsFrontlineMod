@@ -1,0 +1,31 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "gui_light": "front",
+    "parent": "builtin/entity",
+    "textures": {
+      "layer0": "gflmod:item/texture"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "gflmod:item/glock"
+      }
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "gflmod:item/glock"
+      }
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "gflmod:item/glock"
+      }
+    }
+  }
+}

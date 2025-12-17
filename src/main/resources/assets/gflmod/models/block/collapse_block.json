@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "gflmod:block/collapseblock",
+    "up": "gflmod:block/collapseblock",
+    "north": "gflmod:block/collapseblock",
+    "east": "gflmod:block/collapseblock",
+    "south": "gflmod:block/collapseblock",
+    "west": "gflmod:block/collapseblock",
+    "particle": "gflmod:block/collapseblockbroken"
+  },
+  "render_type": "solid"
+}

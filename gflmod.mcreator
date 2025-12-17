@@ -1,0 +1,1156 @@
+{
+  "mod_elements": [
+    {
+      "name": "Manpower",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manpower",
+      "metadata": {
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/item/ManpowerItem.java",
+          "src/main/resources/assets/gflmod/models/item/manpower.json"
+        ]
+      }
+    },
+    {
+      "name": "TDolls",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "t_dolls",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "TDollManpower",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "t_doll_manpower",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gflmod/recipes/t_doll_manpower.json"
+        ]
+      }
+    },
+    {
+      "name": "Dinergate",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinergate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/client/renderer/DinergateRenderer.java",
+          "src/main/java/net/grimlokfox/girlsfrontline/entity/DinergateEntity.java",
+          "src/main/resources/assets/gflmod/models/item/dinergate_spawn_egg.json",
+          "src/main/resources/data/gflmod/forge/biome_modifier/dinergate_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "PickSide",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pick_side",
+      "metadata": {
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/world/inventory/PickSideMenu.java",
+          "src/main/java/net/grimlokfox/girlsfrontline/network/PickSideButtonMessage.java",
+          "src/main/java/net/grimlokfox/girlsfrontline/client/gui/PickSideScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerChooseGnK",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_choose_gn_k",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/PlayerChooseGnKProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerChooseMerc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_choose_merc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/PlayerChooseMercProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerChooseSF",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_choose_sf",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/PlayerChooseSFProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerShouldPickSide",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_should_pick_side",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/PlayerShouldPickSideProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ELIDInfected",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elid_infected",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gflmod/models/item/elid_infected_spawn_egg.json",
+          "src/main/java/net/grimlokfox/girlsfrontline/entity/ELIDInfectedEntity.java",
+          "src/main/java/net/grimlokfox/girlsfrontline/client/renderer/ELIDInfectedRenderer.java",
+          "src/main/resources/data/gflmod/forge/biome_modifier/elid_infected_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "ELIDInfectedThisEntityKillsAnotherOne",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elid_infected_this_entity_kills_another_one",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/ELIDInfectedThisEntityKillsAnotherOneProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Parts",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "parts",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gflmod/models/item/parts.json",
+          "src/main/java/net/grimlokfox/girlsfrontline/item/PartsItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GFL",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gfl",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "DinergateCustom",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinergate_custom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/client/renderer/DinergateCustomRenderer.java",
+          "src/main/java/net/grimlokfox/girlsfrontline/entity/DinergateCustomEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "GFLPart",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gfl_part",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gflmod/recipes/gfl_part.json"
+        ]
+      }
+    },
+    {
+      "name": "Ammo",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ammo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gflmod/models/item/ammo.json",
+          "src/main/java/net/grimlokfox/girlsfrontline/item/AmmoItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GFLAmmo",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gfl_ammo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gflmod/recipes/gfl_ammo.json"
+        ]
+      }
+    },
+    {
+      "name": "Ration",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ration",
+      "metadata": {
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/item/RationItem.java",
+          "src/main/resources/assets/gflmod/models/item/ration.json"
+        ]
+      }
+    },
+    {
+      "name": "GFLRation1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gfl_ration_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gflmod/recipes/gfl_ration_1.json"
+        ]
+      }
+    },
+    {
+      "name": "GFLRation2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gfl_ration_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gflmod/recipes/gfl_ration_2.json"
+        ]
+      }
+    },
+    {
+      "name": "GFLRation",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gfl_ration",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gflmod/recipes/gfl_ration.json"
+        ]
+      }
+    },
+    {
+      "name": "GFLRation3",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gfl_ration_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gflmod/recipes/gfl_ration_3.json"
+        ]
+      }
+    },
+    {
+      "name": "GFLRation4",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gfl_ration_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gflmod/recipes/gfl_ration_4.json"
+        ]
+      }
+    },
+    {
+      "name": "GFLRation5",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gfl_ration_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gflmod/recipes/gfl_ration_5.json"
+        ]
+      }
+    },
+    {
+      "name": "GFLRation6",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gfl_ration_6",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gflmod/recipes/gfl_ration_6.json"
+        ]
+      }
+    },
+    {
+      "name": "GFLRation7",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gfl_ration_7",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gflmod/recipes/gfl_ration_7.json"
+        ]
+      }
+    },
+    {
+      "name": "Bullet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gflmod/models/item/bullet.json",
+          "src/main/java/net/grimlokfox/girlsfrontline/item/BulletItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PistolBullet",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pistol_bullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/entity/PistolBulletEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "PistolRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pistol_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/PistolRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Pistol",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pistol",
+      "metadata": {
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/client/renderer/item/PistolItemRenderer.java",
+          "src/main/resources/assets/gflmod/models/item/pistol.json",
+          "src/main/java/net/grimlokfox/girlsfrontline/item/PistolItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SangvisTacticalModule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sangvis_tactical_module",
+      "metadata": {
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/item/SangvisTacticalModuleItem.java",
+          "src/main/resources/assets/gflmod/models/item/sangvis_tactical_module.json"
+        ]
+      }
+    },
+    {
+      "name": "CustomDinergateSpawner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_dinergate_spawner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gflmod/models/item/custom_dinergate_spawner.json",
+          "src/main/java/net/grimlokfox/girlsfrontline/item/CustomDinergateSpawnerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SangvisFerri",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sangvis_ferri",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CustomDinergateSpawnerRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_dinergate_spawner_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/CustomDinergateSpawnerRightclickedOnBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SFCustomEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sf_custom_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/SFCustomEntityIsHurtProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SFTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sf_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/SFTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SFOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sf_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/SFOnInitialEntitySpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MercDroidsOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "merc_droids_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/MercDroidsOnInitialEntitySpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MercDroidsTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "merc_droids_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/MercDroidsTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MercDroidsCustomEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "merc_droids_custom_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/MercDroidsCustomEntityIsHurtProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DinergateMerc",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinergate_merc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/entity/DinergateMercEntity.java",
+          "src/main/java/net/grimlokfox/girlsfrontline/client/renderer/DinergateMercRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "MercDinergateSpawner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "merc_dinergate_spawner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/item/MercDinergateSpawnerItem.java",
+          "src/main/resources/assets/gflmod/models/item/merc_dinergate_spawner.json"
+        ]
+      }
+    },
+    {
+      "name": "GnKDinergateSpawner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gn_k_dinergate_spawner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gflmod/models/item/gn_k_dinergate_spawner.json",
+          "src/main/java/net/grimlokfox/girlsfrontline/item/GnKDinergateSpawnerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "MercDinergateSpawnerRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "merc_dinergate_spawner_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/MercDinergateSpawnerRightclickedOnBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GnKDinergateSpawnerRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gn_k_dinergate_spawner_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/GnKDinergateSpawnerRightclickedOnBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Merc",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "merc",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GriffinToken",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "griffin_token",
+      "metadata": {
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/item/GriffinTokenItem.java",
+          "src/main/resources/assets/gflmod/models/item/griffin_token.json"
+        ]
+      }
+    },
+    {
+      "name": "GriffinnKryuger",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "griffinn_kryuger",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "DinergateGnK",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinergate_gn_k",
+      "metadata": {
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/client/renderer/DinergateGnKRenderer.java",
+          "src/main/java/net/grimlokfox/girlsfrontline/entity/DinergateGnKEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "AssimilatedSFEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "assimilated_sf_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/AssimilatedSFEntityIsHurtProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AssimilatedSFTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "assimilated_sf_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/AssimilatedSFTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AssimilatedSFOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "assimilated_sf_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/AssimilatedSFOnInitialEntitySpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SFRingleaderMode",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sf_ringleader_mode",
+      "metadata": {
+        "type": "logic",
+        "files": []
+      }
+    },
+    {
+      "name": "CollapseBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "collapse_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gflmod/blockstates/collapse_block.json",
+          "src/main/resources/assets/gflmod/models/block/collapse_block.json",
+          "src/main/resources/data/gflmod/loot_tables/blocks/collapse_block.json",
+          "src/main/resources/assets/gflmod/models/item/collapse_block.json",
+          "src/main/java/net/grimlokfox/girlsfrontline/block/CollapseBlockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "CollapseDamagePlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "collapse_damage_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/CollapseDamagePlayerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SFTacticalModuleCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sf_tactical_module_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gflmod/recipes/sf_tactical_module_craft.json",
+          "src/main/resources/data/gflmod/advancements/recipes/sf_tactical_module_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "SFDinergate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sf_dinergate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gflmod/recipes/sf_dinergate.json",
+          "src/main/resources/data/gflmod/advancements/recipes/sf_dinergate.json"
+        ]
+      }
+    },
+    {
+      "name": "CPU",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cpu",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gflmod/models/item/cpu.json",
+          "src/main/java/net/grimlokfox/girlsfrontline/item/CPUItem.java"
+        ]
+      }
+    },
+    {
+      "name": "DestroyTacticalModuleIfNotSF",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "destroy_tactical_module_if_not_sf",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/DestroyTacticalModuleIfNotSFProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CpuCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cpu_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gflmod/recipes/cpu_craft.json",
+          "src/main/resources/data/gflmod/advancements/recipes/cpu_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "SwapDinergatesDependingOnTeam",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swap_dinergates_depending_on_team",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/procedures/SwapDinergatesDependingOnTeamProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Prowler",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prowler",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gflmod/models/item/prowler_spawn_egg.json",
+          "src/main/java/net/grimlokfox/girlsfrontline/client/renderer/ProwlerRenderer.java",
+          "src/main/resources/data/gflmod/forge/biome_modifier/prowler_biome_modifier.json",
+          "src/main/java/net/grimlokfox/girlsfrontline/entity/ProwlerEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "ProwlerBullet",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prowler_bullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/grimlokfox/girlsfrontline/client/renderer/ProwlerBulletRenderer.java",
+          "src/main/java/net/grimlokfox/girlsfrontline/entity/ProwlerBulletEntity.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "ChoseYourSide",
+      "type": "string",
+      "scope": "map",
+      "value": "\"Choose your Side\""
+    },
+    {
+      "name": "team",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ENTITIES:mod:tag": [
+      "CUSTOM:Dinergate",
+      "CUSTOM:ELIDInfected",
+      "CUSTOM:DinergateCustom",
+      "CUSTOM:PistolBullet",
+      "CUSTOM:DinergateMerc",
+      "CUSTOM:DinergateGnK"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:CollapseBlock"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.gflmod.manpower": "Manpower",
+      "item.gflmod.manpower.description_0": "Used to create t-dolls",
+      "item_group.gflmod.t_dolls": "T Dolls",
+      "entity.gflmod.dinergate": "Dinergate",
+      "gui.gflmod.pick_side.label_sangvis_ferri": "Sangvis Ferri",
+      "gui.gflmod.pick_side.label_choose_your_side": "Choose Your Side",
+      "gui.gflmod.pick_side.label_mercenary": "Mercenary",
+      "gui.gflmod.pick_side.button_im_on_my_own": "I\u0027m on my own",
+      "gui.gflmod.pick_side.button_bring_the_doom": "Bring them doom!",
+      "gui.gflmod.pick_side.label_griffin_kryuger": "Griffin \u0026 Kryuger",
+      "gui.gflmod.pick_side.button_for_glory_of_gk": "For Glory!",
+      "item.gflmod.elid_infected_spawn_egg": "ELID Infected Spawn Egg",
+      "entity.gflmod.elid_infected": "ELID Infected",
+      "item.gflmod.parts": "Parts",
+      "item_group.gflmod.gfl": "GFL",
+      "item.gflmod.parts.description_0": "Used in crafts",
+      "entity.gflmod.dinergate_custom": "Dinergate",
+      "item.gflmod.dinergate_spawn_egg": "Dinergate Spawn Egg",
+      "item.gflmod.ammo.description_0": "Used for firearms and crafts",
+      "item.gflmod.ammo": "Ammo",
+      "item.gflmod.ration": "Ration",
+      "item.gflmod.ration.description_0": "Standart food issue. Can be used to create G\u0026K and Mercenary T-Dolls",
+      "item.gflmod.bullet": "Bullet",
+      "item.gflmod.pistol": "Pistol",
+      "item.gflmod.sangvis_tactical_module.description_0": "Sangvis Ferri Standart Issue Tactical Module. Used for communications and basic logic of SF Dolls.",
+      "item.gflmod.sangvis_tactical_module": "Tactical Module",
+      "item.gflmod.custom_dinergate_spawner": "Dinergate",
+      "item_group.gflmod.sangvis_ferri": "Sangvis Ferri Industrial Manufacturing Company",
+      "entity.gflmod.dinergate_merc": "Dinergate",
+      "item.gflmod.merc_dinergate_spawner": "Dinergate",
+      "item.gflmod.gn_k_dinergate_spawner": "Assimilated Dinergate",
+      "item_group.gflmod.merc": "Mercenary",
+      "item.gflmod.griffin_token": "Token",
+      "item.gflmod.griffin_token.description_0": "Token that used in G\u0026K to trade",
+      "item_group.gflmod.griffinn_kryuger": "Griffin \u0026 Kryuger",
+      "entity.gflmod.dinergate_gn_k": "Dinergate",
+      "gamerule.sFRingleaderMode": "SF Ringleader Mode",
+      "gamerule.sFRingleaderMode.description": "Enables becoming a Ringleader for players who has chosen path of Sangvis Ferri",
+      "block.gflmod.collapse_block": "Collapse Block",
+      "item.gflmod.cpu": "CPU",
+      "entity.gflmod.prowler": "Prowler",
+      "item.gflmod.prowler_spawn_egg": "Prowler Spawn Egg"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/grimlokfox/girlsfrontline/network/GflmodModVariables.java",
+      "src/main/java/net/grimlokfox/girlsfrontline/init/GflmodModModels.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/net/grimlokfox/girlsfrontline/GflmodMod.java",
+      "src/main/java/net/grimlokfox/girlsfrontline/init/GflmodModTabs.java",
+      "src/main/java/net/grimlokfox/girlsfrontline/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/grimlokfox/girlsfrontline/init/GflmodModScreens.java",
+      "src/main/java/net/grimlokfox/girlsfrontline/init/GflmodModMenus.java",
+      "src/main/java/net/grimlokfox/girlsfrontline/init/GflmodModGameRules.java",
+      "src/main/java/net/grimlokfox/girlsfrontline/init/GflmodModBlocks.java",
+      "src/main/java/net/grimlokfox/girlsfrontline/init/GflmodModItems.java",
+      "src/main/java/net/grimlokfox/girlsfrontline/init/GflmodModEntities.java",
+      "src/main/java/net/grimlokfox/girlsfrontline/init/GflmodModEntityRenderers.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "gflmod",
+    "modName": "Girls\u0027 Frontline Mod",
+    "version": "0.0.1",
+    "author": "MCreator, Grimlok Fox",
+    "websiteURL": "https://mcreator.net",
+    "license": "GNU General Public License version 3 (GPLv3)",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.grimlokfox.girlsfrontline"
+  },
+  "mcreatorVersion": 202500228610
+}

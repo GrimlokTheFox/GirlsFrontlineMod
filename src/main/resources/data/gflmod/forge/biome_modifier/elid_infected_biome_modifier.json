@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "gflmod:elid_infected",
+    "weight": 40,
+    "minCount": 2,
+    "maxCount": 7
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    " ab",
+    "cde",
+    "bfb"
+  ],
+  "key": {
+    "a": {
+      "item": "gflmod:ammo"
+    },
+    "b": {
+      "item": "gflmod:parts"
+    },
+    "c": {
+      "item": "minecraft:red_stained_glass"
+    },
+    "d": {
+      "item": "gflmod:sangvis_tactical_module"
+    },
+    "e": {
+      "item": "gflmod:cpu"
+    },
+    "f": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "gflmod:custom_dinergate_spawner",
+    "count": 4
+  }
+}

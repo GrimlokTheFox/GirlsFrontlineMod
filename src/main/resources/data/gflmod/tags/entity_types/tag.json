@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "gflmod:dinergate_gn_k",
+    "gflmod:dinergate_merc",
+    "gflmod:elid_infected",
+    "gflmod:dinergate_custom",
+    "gflmod:pistol_bullet",
+    "gflmod:dinergate"
+  ]
+}

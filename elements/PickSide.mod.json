@@ -1,0 +1,164 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 315,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_choose_your_side",
+          "text": {
+            "fixedValue": "Choose Your Side"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 174,
+          "y": 46,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "tdoll.png",
+          "use1Xscale": false,
+          "x": 94,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "head.png",
+          "use1Xscale": false,
+          "x": 203,
+          "y": 103,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sangvislogo.png",
+          "use1Xscale": false,
+          "x": 303,
+          "y": 104,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_for_glory_of_gk",
+          "text": "For Glory!",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PlayerChooseGnK"
+          },
+          "width": 113,
+          "height": 20,
+          "x": 57,
+          "y": 138,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_im_on_my_own",
+          "text": "I'm on my own",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PlayerChooseMerc"
+          },
+          "width": 92,
+          "height": 20,
+          "x": 172,
+          "y": 138,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_bring_the_doom",
+          "text": "Bring them doom!",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PlayerChooseSF"
+          },
+          "width": 103,
+          "height": 20,
+          "x": 265,
+          "y": 138,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sangvis_ferri",
+          "text": {
+            "fixedValue": "Sangvis Ferri"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 286,
+          "y": 91,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mercenary",
+          "text": {
+            "fixedValue": "Mercenary"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 197,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_griffin_kryuger",
+          "text": {
+            "fixedValue": "Griffin & Kryuger"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 68,
+          "y": 90,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

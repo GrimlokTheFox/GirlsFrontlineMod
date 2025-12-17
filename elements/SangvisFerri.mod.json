@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "tab",
+  "definition": {
+    "name": "Sangvis Ferri Industrial Manufacturing Company",
+    "icon": {
+      "value": "CUSTOM:SangvisTacticalModule"
+    },
+    "showSearch": true
+  }
+}
